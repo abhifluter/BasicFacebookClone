@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="Facebook Logo" class="logo">
+        </div>
+        <div class="nav-middle">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search Facebook">
+            </div>
+        </div>
+        <div class="nav-right">
+            <button class="login-btn">Log In</button>
+            <button class="logout-btn" style="display: none;">Log Out</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <ul class="menu">
+                <li><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-user-friends"></i> Friends</li>
+                <li><i class="fas fa-comments"></i> Messages</li>
+                <li><i class="fas fa-bell"></i> Notifications</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+            </ul>
+        </div>
+
+        <!-- Main Feed -->
+        <div class="main-content">
+            <!-- Create Post Box -->
+            <div class="create-post">
+                <div class="post-input">
+                    <img src="https://picsum.photos/200/300" alt="Profile" class="profile-pic">
+                    <input type="text" placeholder="What's on your mind?" id="post-text">
+                </div>
+                <div class="post-actions">
+                    <button class="post-btn">Post</button>
+                </div>
+            </div>
+
+            <!-- Posts Feed -->
+            <div class="posts-feed" id="posts-feed">
+                <!-- Posts will be dynamically added here -->
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="trending">
+                <h3>Trending</h3>
+                <ul>
+                    <li>#TrendingTopic1</li>
+                    <li>#TrendingTopic2</li>
+                    <li>#TrendingTopic3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
